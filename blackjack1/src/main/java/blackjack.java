@@ -1,18 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author Vinu
- */
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class blackjack {
     private static blackjack game;
+    //array list players created
     private ArrayList<Person> players;
     private Deck deck;
 
@@ -20,7 +13,7 @@ public class blackjack {
         initializeGame();
         dealCards();
         takeTurns();
-        declareWinner();
+        declareResult();
         playAgain();
     }
 
@@ -31,7 +24,9 @@ public class blackjack {
     private void initializeGame() {
         deck = new Deck();
         players = new ArrayList<Person>();
+       //adds new player to array list from Player class object
         players.add(new Player());
+        //adds dealer to array list from Dealer class object
         players.add(new Dealer());
 
         System.out.println("Welcome to a new Blackjack game!");
@@ -65,7 +60,7 @@ public class blackjack {
         }
     }
 
-    private void declareWinner() {
+    private void declareResult() {
         byte highest = -1;
         byte topPlayer = -1;
         for (byte i = 0; i < players.size(); i++) {
