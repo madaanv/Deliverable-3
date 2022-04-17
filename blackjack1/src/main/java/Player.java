@@ -1,23 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  *
- * @author Vinu
+ * This is Player class, sublclass of Person class
  */
 import java.util.Scanner;
 
 public class Player extends Person {
+   //to take input from user scanner is used
     private Scanner keyboard;
 
     public Player() {
+        //calls constructor from its super class
         super();
         name = "You";
         keyboard = new Scanner(System.in);
     }
-
+    
+    //this function returns boolean value
     public boolean wantToHit() {
         System.out.print("\nWould you like to \"hit\" or \"stay\": ");
         while (true) {
