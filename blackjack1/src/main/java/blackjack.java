@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class blackjack {
+public class Blackjack {
     private static blackjack game;
     //array list players created
     private ArrayList<Person> players;
