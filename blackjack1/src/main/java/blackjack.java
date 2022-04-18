@@ -9,7 +9,7 @@ public class Blackjack {
     private ArrayList<Person> players;
     private Deck deck;
 
-    public blackjack() {
+    public Blackjack() {
         initializeGame();
         dealCards();
         takeTurns();
