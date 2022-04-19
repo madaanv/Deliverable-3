@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Blackjack {
-    private static blackjack game;
+    private static Blackjack game;
     //array list players created
     private ArrayList<Person> players;
     private Deck deck;
@@ -18,7 +18,7 @@ public class Blackjack {
     }
 
     public static void main(String[] args) {
-        game = new blackjack();
+        game = new Blackjack();
     }
 
     private void initializeGame() {
